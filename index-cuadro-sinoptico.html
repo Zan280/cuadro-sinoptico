@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: NIA 230 - Documentación de Auditoría</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100" style="background-color: #f0f4f8;">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2" style="color: #003f5c;">Claves de la NIA 230</h1>
+            <p class="text-lg md:text-xl" style="color: #2f4b7c;">Documentación de Auditoría: La base de un trabajo de calidad.</p>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center justify-center text-center" style="background-color: #003f5c; color: white;">
+                <div class="md:w-1/3 text-6xl font-bold mb-4 md:mb-0">🎯</div>
+                <div class="md:w-2/3">
+                    <h2 class="text-2xl font-bold mb-2">Objetivo Principal de la Norma</h2>
+                    <p>La NIA 230 busca que el auditor prepare documentación que proporcione un registro suficiente de la base para su informe y evidencia de que la auditoría se planificó y ejecutó de acuerdo con las Normas Internacionales de Auditoría (NIA) y los requisitos legales aplicables.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-center mb-4" style="color: #665191;">Componentes Esenciales de la Documentación</h3>
+                <p class="text-gray-600 text-center mb-4">La documentación debe ser un registro completo que refleje el trabajo del auditor. Sus tres pilares son los procedimientos aplicados, la evidencia obtenida y las conclusiones alcanzadas.</p>
+                <div class="chart-container">
+                    <canvas id="componentsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-center mb-4" style="color: #a05195;">¿Quién es un "Auditor Experimentado"?</h3>
+                <div class="flex flex-col items-center text-center">
+                     <span class="text-5xl mb-4">🧐</span>
+                    <p class="text-gray-700 mb-2">La norma define a un "auditor experimentado" como una persona (interna o externa) que tiene experiencia práctica en auditoría y un conocimiento razonable de:</p>
+                    <ul class="list-disc list-inside text-left text-gray-600">
+                        <li>Los procesos de auditoría.</li>
+                        <li>Las NIA y los requisitos legales.</li>
+                        <li>El entorno de negocio de la entidad.</li>
+                        <li>Las cuestiones de auditoría e información financiera relevantes.</li>
+                    </ul>
+                    <p class="mt-4 text-sm italic" style="color: #d45087;">La documentación debe ser suficientemente detallada para que un auditor experimentado, sin conexión previa con el encargo, entienda el trabajo realizado.</p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-bold text-center mb-4" style="color: #f95d6a;">Atributos de un Buen Papel de Trabajo</h3>
+                 <p class="text-gray-600 text-center mb-4">Cada documento debe responder a preguntas clave para asegurar la trazabilidad y la rendición de cuentas del trabajo de auditoría realizado.</p>
+                <div class="chart-container" style="max-width: 600px;">
+                    <canvas id="attributesChart"></canvas>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-2xl font-bold text-center mb-6" style="color: #ff7c43;">El Proceso: Desde la Preparación hasta el Archivo Final</h3>
+                <p class="text-gray-600 text-center max-w-3xl mx-auto mb-8">La NIA 230 establece un flujo claro para la gestión de la documentación, enfatizando la importancia de la oportunidad y la integridad del archivo final de auditoría.</p>
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-4">
+                    <div class="text-center flex-1 p-4 rounded-lg" style="background-color: #f0f4f8;">
+                        <div class="text-4xl mb-2">1️⃣</div>
+                        <h4 class="font-bold text-lg" style="color: #003f5c;">Preparación Oportuna</h4>
+                        <p class="text-sm text-gray-600">La documentación se prepara a medida que se realizan los procedimientos. Esto mejora la calidad y facilita la revisión.</p>
+                    </div>
+                    <div class="text-2xl font-semibold hidden md:block" style="color: #ffa600;">➔</div>
+                     <div class="text-2xl font-semibold md:hidden" style="color: #ffa600;">⬇️</div>
+                    <div class="text-center flex-1 p-4 rounded-lg" style="background-color: #f0f4f8;">
+                        <div class="text-4xl mb-2">2️⃣</div>
+                        <h4 class="font-bold text-lg" style="color: #2f4b7c;">Documentación Detallada</h4>
+                        <p class="text-sm text-gray-600">Se registran la naturaleza, el alcance y los resultados. Se identifican las partidas probadas y quién realizó y revisó el trabajo.</p>
+                    </div>
+                     <div class="text-2xl font-semibold hidden md:block" style="color: #ffa600;">➔</div>
+                     <div class="text-2xl font-semibold md:hidden" style="color: #ffa600;">⬇️</div>
+                    <div class="text-center flex-1 p-4 rounded-lg" style="background-color: #f0f4f8;">
+                        <div class="text-4xl mb-2">3️⃣</div>
+                        <h4 class="font-bold text-lg" style="color: #665191;">Compilación del Archivo Final</h4>
+                        <p class="text-sm text-gray-600">El proceso administrativo de agrupar toda la documentación en un archivo final. No se realizan nuevos procedimientos.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-center items-center text-center">
+                    <h3 class="text-xl font-bold mb-4" style="color: #d45087;">Plazo Clave: Compilación Final</h3>
+                    <div class="text-6xl font-bold" style="color: #d45087;">60</div>
+                    <p class="text-lg font-semibold text-gray-700">Días Máximo</p>
+                    <p class="text-gray-600 mt-2">Es el plazo, generalmente no superior a 60 días después de la fecha del informe de auditoría, para completar la compilación del archivo final.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-center mb-4" style="color: #ff7c43;">Propósito y Beneficios de una Documentación Sólida</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3 text-xl">✔</span>
+                            <span class="text-gray-700"><strong>Asistencia al equipo:</strong> Facilita la planificación y ejecución.</span>
+                        </li>
+                        <li class="flex items-start">
+                             <span class="text-green-500 mr-3 text-xl">✔</span>
+                            <span class="text-gray-700"><strong>Supervisión y revisión:</strong> Permite a los responsables dirigir y revisar el trabajo.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3 text-xl">✔</span>
+                            <span class="text-gray-700"><strong>Rendición de cuentas:</strong> Fija la responsabilidad del trabajo realizado.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-3 text-xl">✔</span>
+                            <span class="text-gray-700"><strong>Registro a futuro:</strong> Mantiene un historial de asuntos importantes para auditorías futuras.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <span class="text-green-500 mr-3 text-xl">✔</span>
+                            <span class="text-gray-700"><strong>Inspecciones externas:</strong> Permite revisiones de calidad y regulatorias.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        const brilliantBluesPalette = ['#665191', '#a05195', '#d45087'];
+        const attributesPalette = ['#f95d6a', '#ff7c43', '#ffa600', '#003f5c'];
+
+        function wrapLabels(label) {
+            const maxLength = 16;
+            if (typeof label === 'string' && label.length > maxLength) {
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + ' ' + word).trim().length > maxLength) {
+                        lines.push(currentLine.trim());
+                        currentLine = word;
+                    } else {
+                        currentLine = (currentLine + ' ' + word).trim();
+                    }
+                });
+                if (currentLine) {
+                    lines.push(currentLine.trim());
+                }
+                return lines;
+            }
+            return label;
+        }
+        
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const commonTooltipOptions = {
+            callbacks: {
+                title: tooltipTitleCallback
+            }
+        };
+
+        var ctxComponents = document.getElementById('componentsChart').getContext('2d');
+        var componentsChart = new Chart(ctxComponents, {
+            type: 'doughnut',
+            data: {
+                labels: ['Procedimientos Aplicados', 'Evidencia Obtenida', 'Conclusiones Alcanzadas'],
+                datasets: [{
+                    label: 'Componentes',
+                    data: [40, 40, 20],
+                    backgroundColor: brilliantBluesPalette,
+                    borderColor: '#FFFFFF',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    tooltip: commonTooltipOptions
+                }
+            }
+        });
+
+        var ctxAttributes = document.getElementById('attributesChart').getContext('2d');
+        const originalLabels = [
+            'Quién realizó el trabajo y cuándo', 
+            'Quién revisó el trabajo y cuándo', 
+            'Naturaleza y extensión de procedimientos',
+            'Identificación de partidas probadas'
+        ];
+        var attributesChart = new Chart(ctxAttributes, {
+            type: 'bar',
+            data: {
+                labels: originalLabels.map(wrapLabels),
+                datasets: [{
+                    label: 'Importancia',
+                    data: [90, 85, 95, 80],
+                    backgroundColor: attributesPalette,
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                         ticks: {
+                            display: false
+                        }
+                    },
+                    y: {
+                        ticks: {
+                             font: {
+                                size: 10
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: commonTooltipOptions
+                }
+            }
+        });
+    </script>
+</body>
+</html>
