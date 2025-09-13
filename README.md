@@ -1,0 +1,2 @@
+# cuadro-sinoptico
+Cuadro Sinoptico
